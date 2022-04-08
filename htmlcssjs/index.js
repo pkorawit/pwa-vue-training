@@ -24,5 +24,5 @@ function register(){
     console.log(email);
     console.log(name);
     console.log(sid);
-    alert("Registration completed!")
+    alert("Registration completed!");
 }

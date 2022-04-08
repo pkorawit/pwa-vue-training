@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello Vue</title>
+  </head>
+  <body>
+    <script src="https://unpkg.com/vue@3"></script>
+
+    <div id="app">
+        <h1>{{title}}</h1>
+        <div>URL <input type="text" v-model="url"></div>
+        <div><button @click="goToURL">Go</button></div>
+    </div>
+    <script>
+      Vue.createApp({
+        data() {
+          return {
+            title:'Link to web',
+            url: 'https://www.google.com'
+          };
+        },
+        methods:{
+          goToURL(){
+            window.location.href = this.url
+          }
+        }
+      }).mount("#app");
+    </script>
+  </body>
+</html>
