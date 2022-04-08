@@ -1,0 +1,26 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    color: brown;
+}
+
+input{
+    color: blue;
+    margin: 10px;
+    width: 150px;
+}
+
+.label {
+    color:cadetblue;
+    font-weight:bold;
+}
+
+#register {
+    width: 300px;
+    font-size: 15pt;
+    margin-top: 10px;
+    color: white;
+    background-color: darkcyan;
+} 
